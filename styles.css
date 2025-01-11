@@ -1,59 +1,99 @@
-/* Grundlegende Stile für die Seite */
-body {
-    font-family: Arial, sans-serif;
+/* Reset und grundlegende Stile */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #111;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
 }
 
-header h1 {
-    margin: 0;
+header .logo h1 {
+    font-size: 2rem;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin-left: 20px;
 }
 
-nav ul li a {
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background: #e83e8c;
     color: #fff;
-    text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
 }
 
 section {
-    padding: 20px;
-    margin: 20px 0;
+    padding: 60px 20px;
 }
 
-section h2 {
-    color: #333;
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.services .service-item {
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 footer {
     text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background: #222;
+    padding: 20px;
+    margin-top: 40px;
 }
 
-/* Video-Stile */
-.video-container {
-    text-align: center;
+footer p {
+    margin: 5px 0;
 }
+
