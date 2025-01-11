@@ -3,44 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Showtänzer</title>
+    <title>Showtanz Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header mit Navigation -->
     <header>
-        <h1>Willkommen auf meinem Tanz-Portfolio!</h1>
+        <div class="logo">
+            <h1>Showtanz</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">Über mich</a></li>
-                <li><a href="#videos">Videos</a></li>
+                <li><a href="#services">Leistungen</a></li>
+                <li><a href="#gallery">Galerie</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>Über mich</h2>
-        <p>Ich bin ein professioneller Showtänzer und Choreograf mit über 10 Jahren Erfahrung. Meine Leidenschaft für Tanz hat mich durch zahlreiche Auftritte weltweit geführt.</p>
+    <!-- Hero Section (Großes Bild oder Video) -->
+    <section class="hero">
+        <h2>Willkommen zu meiner Tanzshow!</h2>
+        <p>Erlebe faszinierende Choreografien und atemberaubende Performances.</p>
+        <a href="#contact" class="cta-button">Jetzt Buchen</a>
     </section>
 
-    <section id="videos">
-        <h2>Meine Videos</h2>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/example_video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- Über mich Section -->
+    <section id="about" class="about">
+        <h2>Über mich</h2>
+        <p>Ich bin ein professioneller Showtänzer mit über 10 Jahren Erfahrung in internationalen Produktionen. Meine Shows bieten eine einzigartige Mischung aus Kunst, Bewegung und Musik.</p>
+    </section>
+
+    <!-- Unsere Leistungen Section -->
+    <section id="services" class="services">
+        <h2>Unsere Leistungen</h2>
+        <div class="service-item">
+            <h3>Live Shows</h3>
+            <p>Spektakuläre Live-Performances für jede Veranstaltung.</p>
+        </div>
+        <div class="service-item">
+            <h3>Choreografie</h3>
+            <p>Individuelle Choreografien für Tänzer und Gruppen.</p>
+        </div>
+        <div class="service-item">
+            <h3>Workshops</h3>
+            <p>Interaktive Tanzworkshops für jedes Level.</p>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Für Anfragen oder Buchungen können Sie mich über die folgenden Kontaktmöglichkeiten erreichen:</p>
-        <ul>
-            <li>Email: <a href="mailto:info@tanzshow.de">info@tanzshow.de</a></li>
-            <li>Telefon: +49 123 456 789</li>
-        </ul>
+    <!-- Galerie Section -->
+    <section id="gallery" class="gallery">
+        <h2>Galerie</h2>
+        <div class="gallery-grid">
+            <img src="image1.jpg" alt="Tanz Performance 1">
+            <img src="image2.jpg" alt="Tanz Performance 2">
+            <img src="image3.jpg" alt="Tanz Performance 3">
+        </div>
     </section>
 
+    <!-- Kontakt Section -->
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Tanzshow - Alle Rechte vorbehalten</p>
+        <p>&copy; 2025 Showtanz Portfolio</p>
+        <p>Folge mir auf <a href="#">Instagram</a> und <a href="#">Facebook</a></p>
     </footer>
 </body>
 </html>
+
